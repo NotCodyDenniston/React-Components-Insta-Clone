@@ -3,7 +3,6 @@ import Post from './Post';
 import './Posts.css';
 
 const Posts = (props) => {
-  // 🔥 Make sure the parent of Posts is passing the right props!
   const { likePost, posts } = props;
 
   return (
@@ -11,7 +10,6 @@ const Posts = (props) => {
       {posts.map(post => {
         return <Post likePost={likePost} post={post} key={post.id}/>
       })}
-      {/* Check the implementation of Post to see what props it requires! */}
     </div>
   );
 };
